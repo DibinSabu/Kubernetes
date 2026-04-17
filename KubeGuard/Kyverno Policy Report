@@ -1,0 +1,25 @@
+:~$ kubectl get policyreport -A
+NAMESPACE     NAME                                   KIND         NAME                                             PASS   FAIL   WARN   ERROR   SKIP   AGE
+default       f4afdd5e-b4eb-4ed6-bc05-9e77385ee8af   Pod          nginx-test                                       0      1      0      0       0      11h
+kube-system   45e97115-beaa-41ac-abc5-9e8065c6b9a8   DaemonSet    kube-proxy                                       0      1      0      0       0      11h
+kube-system   6377b3cf-677f-4d4c-b7ba-da2c0414d1c1   Pod          coredns-7d764666f9-qf99q                         0      1      0      0       0      11h
+kube-system   68946e22-688e-4e14-9a88-11fa39dd30ee   Pod          kube-proxy-hnpfn                                 0      1      0      0       0      11h
+kube-system   9049df8c-f294-4827-a55c-7d5700e1d19d   Pod          kube-apiserver-minikube                          0      1      0      0       0      11h
+kube-system   aa5053be-163d-4cd2-a3a1-a7c693353948   Pod          etcd-minikube                                    0      1      0      0       0      11h
+kube-system   af0589bc-5e81-4cf4-bcf1-01e582d3a2cb   Pod          kube-scheduler-minikube                          0      1      0      0       0      11h
+kube-system   b2caade1-1635-4347-b33e-6d3dab45919a   Pod          storage-provisioner                              0      1      0      0       0      11h
+kube-system   ef41da2b-6d6c-4628-bbba-6c2157ff11bf   ReplicaSet   coredns-7d764666f9                               0      1      0      0       0      11h
+kube-system   f177a496-4dfc-4fb9-a748-9e50e2ed64ce   Pod          kube-controller-manager-minikube                 0      1      0      0       0      11h
+kube-system   fb29d016-8d7e-421f-8b63-d0d072b39000   Deployment   coredns                                          0      1      0      0       0      11h
+kyverno       0e2a40e8-67d2-4dec-9741-d1b1bf67cc21   ReplicaSet   kyverno-admission-controller-659d58644b          0      1      0      0       0      11h
+kyverno       352ba97a-b59d-4687-8665-d832ffef7d6c   Pod          kyverno-cleanup-controller-8bfc4f578-vf6g6       0      1      0      0       0      11h
+kyverno       3ce6354d-347e-445a-b86b-ca035fa51ca1   ReplicaSet   kyverno-reports-controller-6c666d96              0      1      0      0       0      11h
+kyverno       4d50bd0c-2831-40b1-a82f-553364b00222   Deployment   kyverno-admission-controller                     0      1      0      0       0      11h
+kyverno       6724fc50-1de1-4aca-9f10-139f9c0d8242   ReplicaSet   kyverno-background-controller-778bffc669         0      1      0      0       0      11h
+kyverno       69748c17-56b4-4216-bb86-01127ea3a56b   Deployment   kyverno-background-controller                    0      1      0      0       0      11h
+kyverno       6f0ba3bc-d46f-4447-b562-169671da0abb   Deployment   kyverno-cleanup-controller                       0      1      0      0       0      11h
+kyverno       7f6565b9-56ec-42b9-b14d-d53990a37c3b   ReplicaSet   kyverno-cleanup-controller-8bfc4f578             0      1      0      0       0      11h
+kyverno       8b063cb8-2770-44d3-bf48-91c11ee04e88   Pod          kyverno-reports-controller-6c666d96-z2stx        0      1      0      0       0      11h
+kyverno       8b675b54-eaaa-47dc-a150-bbd302b79675   Deployment   kyverno-reports-controller                       0      1      0      0       0      11h
+kyverno       aa80835e-889e-483c-a0d1-dc7691324074   Pod          kyverno-admission-controller-659d58644b-8rbqt    0      1      0      0       0      11h
+kyverno       e3da2fe3-b2b9-4742-8f95-994faa7cd633   Pod          kyverno-background-controller-778bffc669-c8d7s   0      1      0      0       0      11h
